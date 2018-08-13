@@ -12,11 +12,13 @@ Add a button on the tinyMCE editor toolbar, that by clicking it, removes all sty
 
 == Description ==
 
-This plugin adds a button on the tinyMCE editor toolbar. When editing a post, clicking on the Clear all text style and formating button, allows you to remove the text style and formating from the post content as well as the images.
+This plugin adds a button on the tinyMCE editor toolbar. When editing a post, clicking on the Clear all text style 
+and formating button, allows you to remove the text style and formating from the post content as well as the images.
 
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the `/wp-content/plugins/simple-clean-content` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/simple-clean-content` directory, or install the plugin 
+through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
