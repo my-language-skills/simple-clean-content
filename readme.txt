@@ -22,3 +22,8 @@ This section describes how to install the plugin and get it working.
 1. Upload the plugin files to the `/wp-content/plugins/simple-clean-content` directory, or install the plugin 
 through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
+
+== Screenshots ==
+
+1. Screenshot of a sample of text style and formating modifications.
+2. Screenshot of the same text, without the text style and formating and image in the editor.
