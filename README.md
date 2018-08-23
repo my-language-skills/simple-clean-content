@@ -25,10 +25,10 @@ and formating button, allows you to remove the text style and formating from the
 ## Screenshots 
  
 ### Sample of text style and formating modifications.
-![Sample of text style and formating modifications](/assets/Screenshot-1.png) 
+![Sample of text style and formating modifications](/assets/Screenshot-1.PNG) 
 
 ### Text after, without style and formating and image in the editor.
-![Example](/assets/Screenshot-2.png)
+![Example](/assets/Screenshot-2.PNG)
  
 ## Changelog 
  
