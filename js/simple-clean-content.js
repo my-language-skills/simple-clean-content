@@ -1,7 +1,7 @@
 (function () {
     tinymce.PluginManager.add('clean-text-style-tinymce-plugin', function (editor, url) {
         // Declare custom icon button
-        editor.addButton('clean_text_style_tinymce_custom_icon_button', {
+        editor.addButton('scc_tinymce_custom_icon_button', {
             title: 'Clear all text style and formating',
             icon: 'icon clean-text-style-icon',
             onclick: function () {
