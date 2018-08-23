@@ -10,7 +10,7 @@
 // Add required css file for custom icon
 
 function clean_text_style_tinymce_additional_css() {
-  wp_enqueue_style( 'clean-text-style-tinymce', plugins_url( 'css/clean-text-style-tinymce.css', __FILE__ ) );
+  wp_enqueue_style( 'clean-text-style-tinymce', plugins_url( 'css/simple-clean-content.css', __FILE__ ) );
 }
 add_action( 'admin_enqueue_scripts', 'clean_text_style_tinymce_additional_css' );
 
@@ -39,7 +39,7 @@ add_action('admin_head', 'clean_text_style_tinymce_main');
 // Add TinyMCE plugin file to TinyMCE editor
 
 function clean_text_style_tinymce_add_plugin( $plugin_array ) {
-  $plugin_array['clean-text-style-tinymce-plugin'] = plugins_url( 'js/clean-text-style-tinymce-plugin.js', __FILE__ );
+  $plugin_array['clean-text-style-tinymce-plugin'] = plugins_url( 'js/simple-clean-content.js', __FILE__ );
   return $plugin_array;
 }
 
