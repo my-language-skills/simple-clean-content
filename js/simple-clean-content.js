@@ -1,5 +1,5 @@
 (function () {
-    tinymce.PluginManager.add('clean-text-style-tinymce-plugin', function (editor, url) {
+    tinymce.PluginManager.add('scc-tinymce-plugin', function (editor, url) {
         // Declare custom icon button
         editor.addButton('scc_tinymce_custom_icon_button', {
             title: 'Clear all text style and formating',
