@@ -39,7 +39,7 @@ add_action('admin_head', 'scc_tinymce_main');
 // Add TinyMCE plugin file to TinyMCE editor
 
 function scc_tinymce_add_plugin( $plugin_array ) {
-  $plugin_array['clean-text-style-tinymce-plugin'] = plugins_url( 'js/simple-clean-content.js', __FILE__ );
+  $plugin_array['scc-tinymce-plugin'] = plugins_url( 'js/simple-clean-content.js', __FILE__ );
   return $plugin_array;
 }
 
