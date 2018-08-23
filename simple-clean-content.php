@@ -46,7 +46,7 @@ function scc_tinymce_add_plugin( $plugin_array ) {
 // Adds the button defined in the plugin file to the button list on TinyMCE
 
 function scc_tinymce_register_buttons( $buttons ) {
-  array_push( $buttons, 'clean_text_style_tinymce_custom_icon_button' );
+  array_push( $buttons, 'scc_tinymce_custom_icon_button' );
   return $buttons;
 }
 
