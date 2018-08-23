@@ -27,3 +27,9 @@ through the WordPress plugins screen directly.
 
 1. Screenshot of a sample of text style and formating modifications.
 2. Screenshot of the same text, without the text style and formating and image in the editor.
+
+== Changelog ==
+ 
+
+ 
+== Upgrade Notice ==
