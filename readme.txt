@@ -1,5 +1,5 @@
 === Simple Clean Content ===
-Contributors: tooulakis13
+Contributors: colomet, tooulakis13
 Tags: wordpress, wordpress-plugin, tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling
 Requires at least: 4.6
 Tested up to: 4.9.8
@@ -29,7 +29,8 @@ through the WordPress plugins screen directly.
 2. Screenshot of the same text, without the text style and formating and image in the editor.
 
 == Changelog ==
- 
+
+1.0 first release
 
  
 == Upgrade Notice ==
