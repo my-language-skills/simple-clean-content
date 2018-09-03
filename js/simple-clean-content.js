@@ -1,12 +1,12 @@
 (function () {
-    tinymce.PluginManager.add('scc-tinymce-plugin', function (editor, url) {
+    tinymce.PluginManager.add('scc-tinymce-plugin', function (scc_editor) {
         // Declare custom icon button
-        editor.addButton('scc_tinymce_custom_icon_button', {
+        scc_editor.addButton('scc_tinymce_custom_icon_button', {
             title: 'Clear all text style and formating',
-            icon: 'icon clean-text-style-icon',
+            icon: 'icon scc-icon',
             onclick: function () {
                 
-                var cont = editor.getContent(); //get the content of the editor
+                var cont = scc_editor.getContent(); //get the content of the editor
                 var stripped = cont.replace(/<(?!\s*\/?\s*p\b)[^>]*>/gi, ""); //remove all tags except paragraph
                 var strippedTemp = stripped.replace(/\s+/g, ' ').trim(); //trim all extra spacing
 
@@ -23,14 +23,14 @@
 
                 }
 
-                var activeEditor = tinyMCE.get('content');
+                var scc_activeEditor = tinyMCE.get('content');
                 var content = strippedTemp;
                 if ($('#wp-content-wrap').hasClass('html-active')) { // In text mode
                     $('#content').val(content); // Update the textarea's content
                 } else { // In tinyMCE mode
-                    var activeEditor = tinyMCE.get('content');
-                    if (activeEditor !== null) { // Verify the call of setContent is not on null
-                        activeEditor.setContent(content); // Update tinyMCE's content
+                    var scc_activeEditor = tinyMCE.get('content');
+                    if (scc_activeEditor !== null) { // Verify the call of setContent is not on null
+                        scc_activeEditor.setContent(content); // Update tinyMCE's content
                     }
                 }
             }
