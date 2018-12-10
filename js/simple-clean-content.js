@@ -11,6 +11,15 @@
                 /*
                  *  Search for break tags inside paragraph tags
                  */
+                
+                var searchMultiBrs = cont.search(/(<br\s*\/?>){2,}/gi); //Search for multiple break tags inside paragraph tags
+                while (searchMultiBrs != -1) {
+                    
+                    cont = cont.replace(/(<br\s*\/?>){2,}/gi, " ");
+                    
+                    searchMultiBrs = cont.search(/(<br\s*\/?>){3,}/gi);
+                }
+                
                 var searchRes = cont.search("<br />");
                 while (searchRes != -1) {
 
@@ -47,7 +56,7 @@
                     var searchRes3 = strippedTempNew[i].search(reg);
                     while (searchRes3 != -1) {
 
-                        strippedTempNew[i] = strippedTempNew[i].replace(reg, "<br />"); // replace the previous set combination, back to
+                        strippedTempNew[i] = strippedTempNew[i].replace(reg, "</p><p>"); // replace the previous set combination, back to
                                                                                         // the break tags if it appears inside a paragraph tag
                         searchRes3 = strippedTempNew[i].search(reg);
                     }
