@@ -32,7 +32,8 @@ through the WordPress plugins screen directly.
 
 == Changelog ==
 
-1.0 first release
+1.0 First release
+1.1 Second release - Fixed issues regarding spacing and new lines that were causing the plugin to malfunction
 
  
 == Upgrade Notice ==
