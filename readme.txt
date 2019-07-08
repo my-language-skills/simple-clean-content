@@ -1,9 +1,9 @@
 === Simple Clean Content ===
-Contributors: colomet, tooulakis13
+Contributors: colomet, tooulakis13, davideC00
 Tags: wordpress, wordpress-plugin, tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling
 Requires at least: 4.6
-Tested up to: 4.9.8
-Stable tag: 4.9.8
+Tested up to: 5.2.2
+Stable tag: 1.1
 Requires PHP: 5.2.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -12,8 +12,8 @@ Add a button on the tinyMCE editor toolbar, that by clicking it, removes all sty
 
 == Description ==
 
-This plugin adds a button on the tinyMCE editor toolbar. When editing a post, clicking on the Clear all text style 
-and formating button, allows you to remove the text style and formating from the post content as well as the images.
+This plugin adds a button on the tinyMCE editor toolbar. When editing a post, clicking on the "Clear all text style
+and formating button", allows you to remove the text style and formating from the post content as well as the images.
 
 https://github.com/my-language-skills/simple-clean-content
 
@@ -21,7 +21,7 @@ https://github.com/my-language-skills/simple-clean-content
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the `/wp-content/plugins/simple-clean-content` directory, or install the plugin 
+1. Upload the plugin files to the `/wp-content/plugins/simple-clean-content` directory, or install the plugin
 through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
@@ -32,8 +32,8 @@ through the WordPress plugins screen directly.
 
 == Changelog ==
 
-1.0 First release
 1.1 Second release - Fixed issues regarding spacing and new lines that were causing the plugin to malfunction
+1.0 First release
 
- 
+
 == Upgrade Notice ==
