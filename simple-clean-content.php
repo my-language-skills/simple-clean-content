@@ -1,14 +1,29 @@
 <?php
+
 /**
- * Plugin Name: Simple Clean Content
- * Plugin URI:  https://github.com/my-language-skills/simple-clean-content
- * Description: This plugin, adds a button on TinyMCE toolbal editor. By clicking the button, all the styles of the text and images that the editor contains are removed, leaving just the paragraphs intact. Additionally, extra spaces as well as extra lines are removed.
- * Version: 1.0
+ * Simple Clean Content
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
+ * @link              https://github.com/my-language-skills/simple-clean-content
+ * @since             1.0
+ * @package           simple-clean-content
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Simple Clean Content
+ * Plugin URI:        https://github.com/my-language-skills/simple-clean-content
+ * Description:       This plugin, adds a button on TinyMCE toolbal editor. By clicking the button, all the styles of the text and images that the editor contains are removed, leaving just the paragraphs intact. Additionally, extra spaces as well as extra lines are removed.
+ * Version:           1.1
  * Author:            My Language Skills team
  * Author URI:        https://github.com/my-language-skills/
  * License:           GPL 3.0
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
-*/
+ * Text Domain:       simple-clean-content
+ * Domain Path:       /languages
+ */
 
 // Add required css file for custom icon
 function scc_tinymce_additional_css() {
