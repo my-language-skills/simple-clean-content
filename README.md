@@ -4,7 +4,7 @@
 * Donate link: https://opencollective.com/mylanguageskills
 * Tags: wordpress, wordpress-plugin, tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling
 * Requires at least: 4.6
-* Tested up to: 5.2.2
+* Tested up to: 4.9.9
 * Requires PHP: 5.2.4
 * Stable tag: 1.1
 * License: GNU 3.0

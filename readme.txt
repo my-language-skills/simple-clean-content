@@ -3,7 +3,7 @@ Contributors: colomet, tooulakis13, davideC00
 Donate link: https://opencollective.com/mylanguageskills
 Tags: tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling, cleaning, delete, wordpress plugin
 Requires at least: 4.6
-Tested up to: 5.2.2
+Tested up to: 4.9.9
 Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv3
