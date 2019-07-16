@@ -2,14 +2,16 @@
 Contributors: colomet, tooulakis13, davideC00
 Donate link: https://opencollective.com/mylanguageskills
 Tags: tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling, cleaning, delete, wordpress plugin
-Requires at least: 4.6
-Tested up to: 4.9.9
+Requires at least: 3.0.1
+Tested up to: 5.2.2
 Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Add a button on the tinyMCE editor toolbar, that by clicking it, removes all styling from the content of a post.
+
+**NO Compatible with Gutenberg!**
 
 == Description ==
 
