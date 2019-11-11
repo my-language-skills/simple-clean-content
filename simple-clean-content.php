@@ -28,7 +28,7 @@
  /**
   * Add required css file for custom icon
   *
-  * @since
+  * @since 1.0
   *
   */
 
@@ -41,7 +41,7 @@ add_action( 'admin_enqueue_scripts', 'scc_tinymce_additional_css' );
 /**
  * Hook the plugin file for TinyMCE and the button to the editor
  *
- * @since
+ * @since 1.0
  *
  */
 
@@ -68,7 +68,7 @@ add_action('admin_head', 'scc_tinymce_main');
 /**
  * Add TinyMCE plugin file to TinyMCE editor
  *
- * @since
+ * @since 1.0
  *
  */
 
@@ -80,10 +80,10 @@ function scc_tinymce_add_plugin( $plugin_array ) {
 /**
  * Adds the button defined in the plugin file to the button list on TinyMCE
  *
- * @since
+ * @since 1.0
  *
  */
- 
+
 function scc_tinymce_register_buttons( $buttons ) {
   array_push( $buttons, 'scc_tinymce_custom_icon_button' );
   return $buttons;
