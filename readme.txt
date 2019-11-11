@@ -4,8 +4,8 @@ Donate link: https://opencollective.com/mylanguageskills
 Tags: tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling, cleaning, delete, wordpress plugin
 Requires at least: 3.0.1
 Tested up to: 5.2.2
-Stable tag: 1.1
 Requires PHP: 5.6
+Stable tag: 1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
