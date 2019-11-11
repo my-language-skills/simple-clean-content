@@ -18,9 +18,6 @@ and formating button", allows you to remove the text style and formating from th
 
 **NO Compatible with Gutenberg!**
 
-
-[GitHub simple-default-timezone]().
-
 == Installation ==
 
 = This plugin requires: =
