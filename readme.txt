@@ -1,5 +1,5 @@
 === Simple clean content ===
-Contributors: colomet, tooulakis13, davideC00
+Contributors: colomet, tooulakis13, dcazzorla
 Donate link: https://opencollective.com/mylanguageskills
 Tags: tinyMce-editor, tinyMce-editor-custom-button, remove-text-formating, remove-text-styling, cleaning, delete, wordpress plugin
 Requires at least: 3.0.1
