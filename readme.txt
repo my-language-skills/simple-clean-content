@@ -49,6 +49,8 @@ Please visit the [GitHub project page](https://github.com/my-language-skills/sim
 2. Screenshot of the same text, without the text style and formating and image in the editor.
 
 == Changelog ==
+= 1.2 =
+* BUGFIXES: Fixed the unidentified function bug which was causing the plugin to not work at all.
 
 = 1.1 =
 * BUGFIXES: Fixed issues regarding spacing and new lines that were causing the plugin to malfunction.

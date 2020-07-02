@@ -34,6 +34,9 @@ and formating" button, allows you to remove the text style and formating from th
 
 ## Changelog
 
+### 1.2
+-Fixed the unidentified function bug which was causing the plugin to not work at all.
+
 ### 1.1
 -Fixed issues regarding spacing and new lines that were causing the plugin to malfunction.
 -Rearrange structure of the JavaScript file file.
