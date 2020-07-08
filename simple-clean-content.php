@@ -88,5 +88,42 @@ function scc_tinymce_register_buttons( $buttons ) {
   array_push( $buttons, 'scc_tinymce_custom_icon_button' );
   return $buttons;
 }
+function load_my_quicktags_inline() {
+ 
+  if ( wp_script_is( 'quicktags' ) ) { ?>
+   
+      <script>
+       
+       QTags.addButton('table-mylng', 'table Mylng', '<table><tbody>', '</tbody></table>');
+       QTags.addButton('table-myln', 'table tr', '<tr>', '</tr>');
+       QTags.addButton('table-myl', 'table td', '<td>', '</td>');
+
+      </script>
+   
+  <?php }
+
+}
+function load_my_quicktags_inline2() {
+ 
+  if ( wp_script_is( 'quicktags' ) ) { ?>
+   
+      <script>
+       QTags.addButton('alert', 'alert', my_alert);
+       function my_alert() {
+    var my_class = prompt( 'Enter What to put inside the table:', '' );
+     
+    if ( my_class ) {
+        QTags.insertContent('<table><tbody><tr><td>"' + my_class +'"</td></tr></tbody></table>');
+    }
+}
+
+
+      </script>
+   
+  <?php }
+
+}
+add_action( 'admin_print_footer_scripts', 'load_my_quicktags_inline' );
+add_action( 'admin_print_footer_scripts', 'load_my_quicktags_inline2' );
 
 ?>
