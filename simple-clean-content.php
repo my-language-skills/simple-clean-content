@@ -104,18 +104,53 @@ function load_my_quicktags_inline() {
 
 }
 function load_my_quicktags_inline2() {
+  if ( wp_script_is( 'quicktags' ) ) { ?>
+   
+    <script>
+      QTags.addButton('alert', 'alert', do_something);
+      function do_something() {
+        editor.addCommand( 'RemoveTableStyles', function() {
+          var node = editor.selection.getStart();
+          var table = editor.dom.getParents( node, 'table' );
+          var attr = {
+            style: null,
+            'data-mce-style': null,
+            width: null,
+            height: null,
+            minWidth: null,
+            maxWidth: null,
+            minHeight: null,
+            maxHeight: null,
+            align: null,
+            valign: null,
+            axis: null,
+            'char': null,
+            charoff: null,
+            bgcolor: null,
+            border: null,
+            cellspacing: null,
+            cellpadding: null
+          };
+
+          if ( table ) {
+            editor.$( table ).attr( attr ).find( 'tr, th, td, thead, tbody, tfoot' ).each( function( i, element ) {
+              editor.$( element ).attr( attr );
+            } );
+          }
+        } );
+  }</script>
+  <?php }
+
+}
+function load_my_quicktags_inline3() {
  
   if ( wp_script_is( 'quicktags' ) ) { ?>
    
       <script>
-       QTags.addButton('alert', 'alert', my_alert);
-       function my_alert() {
-    var my_class = prompt( 'Enter What to put inside the table:', '' );
-     
-    if ( my_class ) {
-        QTags.insertContent('<table><tbody><tr><td>"' + my_class +'"</td></tr></tbody></table>');
-    }
-}
+       QTags.addButton('do something', 'do something', do_something);
+       function do_something() {
+        var cont = scc_editor.getContent();
+       }
 
 
       </script>
