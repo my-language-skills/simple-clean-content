@@ -88,28 +88,26 @@ function scc_tinymce_register_buttons( $buttons ) {
   array_push( $buttons, 'scc_tinymce_custom_icon_button' );
   return $buttons;
 }
-function load_my_quicktags_inline() {
- 
-  if ( wp_script_is( 'quicktags' ) ) { ?>
-   
-      <script>
-       
-       QTags.addButton('table-mylng', 'table Mylng', '<table><tbody>', '</tbody></table>');
-       QTags.addButton('table-myln', 'table tr', '<tr>', '</tr>');
-       QTags.addButton('table-myl', 'table td', '<td>', '</td>');
+//From here Arafat wrote the codes
+//Adds a button in the quickeditor named cleanTableStyle
+//after pressing it the style of the table will be null
 
-      </script>
-   
-  <?php }
-
+function load_my_quicktags_inline(){ ?>
+  <script type="text/javascript" src= "../wp-content/plugins/simple-clean-content/js/clean-table-style.js"></script>
+<?php 
 }
-function load_my_quicktags_inline2() {
+
+
+
+/*function load_my_quicktags_inline() {
   if ( wp_script_is( 'quicktags' ) ) { ?>
    
-    <script>
-      QTags.addButton('alert', 'alert', do_something);
+    <script type="text/javascript">
+      QTags.addButton('cleanTableStyle', 'cleanTableStyle', do_something);
       function do_something() {
-        editor.addCommand( 'RemoveTableStyles', function() {
+        ( function( tinymce ) {
+          tinymce.PluginManager.add(function( editor) {
+        (function() {
           var node = editor.selection.getStart();
           var table = editor.dom.getParents( node, 'table' );
           var attr = {
@@ -137,28 +135,17 @@ function load_my_quicktags_inline2() {
               editor.$( element ).attr( attr );
             } );
           }
-        } );
-  }</script>
+        });
+      });
+      }(window.tinymce));
+    
+  }
+  </script>
   <?php }
 
-}
-function load_my_quicktags_inline3() {
- 
-  if ( wp_script_is( 'quicktags' ) ) { ?>
-   
-      <script>
-       QTags.addButton('do something', 'do something', do_something);
-       function do_something() {
-        var cont = scc_editor.getContent();
-       }
+}*/
 
-
-      </script>
-   
-  <?php }
-
-}
 add_action( 'admin_print_footer_scripts', 'load_my_quicktags_inline' );
-add_action( 'admin_print_footer_scripts', 'load_my_quicktags_inline2' );
+
 
 ?>
