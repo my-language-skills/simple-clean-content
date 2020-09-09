@@ -1,10 +1,13 @@
 QTags.addButton('cleanTableStyle', 'cleanTableStyle', do_something);
 function do_something() {
-  ( function( tinymce ) {
-    tinymce.PluginManager.add(function(editor) {
-      (function() {
-        var node = editor.selection.getStart();
-        var table = editor.dom.getParents( node, 'table' );
+  ( function( ) {
+    console.log("Works1");
+ 
+      console.log("Works2");
+      ( function(editor) {
+        console.log("Works3");
+        //var node = editor.selection.getStart();
+        var table = editor.dom.getParents(  'table' );
         var attr = {
           style: null,
           'data-mce-style': null,
@@ -24,15 +27,17 @@ function do_something() {
           cellspacing: null,
           cellpadding: null
         };
-
+        console.log("Works4");
         if ( table ) {
+          console.log("Works5");
           editor.$( table ).attr( attr ).find( 'tr, th, td, thead, tbody, tfoot' ).each( function( i, element ) {
             editor.$( element ).attr( attr );
           } );
+          console.log("Works6");
         }
-      });
-    });
-  }(window.tinymce));
+      }( window.tinymce ));
+
+  }( window.tinymce ));
     
 }
   
