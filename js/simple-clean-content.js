@@ -93,7 +93,7 @@
                 
                 var scc_activeEditor = tinyMCE.get('content');
                 var content = formatContent(breakSearchAndReplace(cont));
-                if ($('#wp-content-wrap').hasClass('html-active')) { // In text mode
+                if (jQuery('#wp-content-wrap').hasClass('html-active')) { // In text mode
                     $('#content').val(content); // Update the textarea's content
                 } else { // In tinyMCE mode
                     var scc_activeEditor = tinyMCE.get('content');

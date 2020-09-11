@@ -88,5 +88,64 @@ function scc_tinymce_register_buttons( $buttons ) {
   array_push( $buttons, 'scc_tinymce_custom_icon_button' );
   return $buttons;
 }
+//From here Arafat wrote the codes
+//Adds a button in the quickeditor named cleanTableStyle
+//after pressing it the style of the table will be null
+
+function load_my_quicktags_inline(){ ?>
+  <script type="text/javascript" src= "../wp-content/plugins/simple-clean-content/js/clean-table-style.js"></script>
+<?php 
+}
+
+
+
+/*function load_my_quicktags_inline() {
+  if ( wp_script_is( 'quicktags' ) ) { ?>
+   
+    <script type="text/javascript">
+      QTags.addButton('cleanTableStyle', 'cleanTableStyle', do_something);
+      function do_something() {
+        ( function( tinymce ) {
+          tinymce.PluginManager.add(function( editor) {
+        (function() {
+          var node = editor.selection.getStart();
+          var table = editor.dom.getParents( node, 'table' );
+          var attr = {
+            style: null,
+            'data-mce-style': null,
+            width: null,
+            height: null,
+            minWidth: null,
+            maxWidth: null,
+            minHeight: null,
+            maxHeight: null,
+            align: null,
+            valign: null,
+            axis: null,
+            'char': null,
+            charoff: null,
+            bgcolor: null,
+            border: null,
+            cellspacing: null,
+            cellpadding: null
+          };
+
+          if ( table ) {
+            editor.$( table ).attr( attr ).find( 'tr, th, td, thead, tbody, tfoot' ).each( function( i, element ) {
+              editor.$( element ).attr( attr );
+            } );
+          }
+        });
+      });
+      }(window.tinymce));
+    
+  }
+  </script>
+  <?php }
+
+}*/
+
+add_action( 'admin_print_footer_scripts', 'load_my_quicktags_inline' );
+
 
 ?>
